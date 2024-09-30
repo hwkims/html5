@@ -2758,6 +2758,7 @@ input, select, textarea {
 			border-radius: 100%;
 			margin: 0 3em 0 0;
 			display: block;
+			margin: 2em auto;
 		}
 
 			.spotlight .image img {
@@ -2767,7 +2768,9 @@ input, select, textarea {
 			}
 
 		.spotlight .content {
-			width: 70%;
+			/* width: 70%; */
+			width: 100%;
+			text-align: center;
 		}
 
 			.spotlight .content > :last-child {
@@ -2782,21 +2785,25 @@ input, select, textarea {
 		}
 
 			.spotlight:nth-child(2n) .image {
-				margin: 0 0 0 3em;
+				/* margin: 0 0 0 3em; */
+				margin: 2em auto;
 			}
 
 			.spotlight:nth-child(2n) .content {
 				text-align: right;
+				text-align: center;
 			}
 
 	@media screen and (max-width: 736px) and (orientation: landscape) {
 
 		.spotlight .image {
-			margin: 0 2em 0 0;
+			/* margin: 0 2em 0 0; */
+			margin: 2em auto;
 		}
 
 		.spotlight:nth-child(2n) .image {
-			margin: 0 0 0 2em;
+			/* margin: 0 0 0 2em; */
+			margin: 2em auto;
 		}
 
 	}
@@ -2813,7 +2820,11 @@ input, select, textarea {
 			.spotlight .image {
 				width: 100%;
 				max-width: 60%;
-				margin: 0 0 2em 0 !important;
+				/* margin: 0 0 2em 0 !important; */
+				margin: 2em auto;
+			}
+			.spotlight:nth-child(2n) .image {
+				margin: 2em auto;
 			}
 
 			.spotlight .content {
