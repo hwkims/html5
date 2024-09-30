@@ -1,0 +1,48 @@
+    <style>
+        div.down_banner { width:1200px; border:1px solid red; margin-top:50px; text-align:center;}
+        div.down_banner h2 { border-bottom:3px solid #000; padding-bottom:15px; }
+        div.down_banner div.movie { width:570px; height:400px; background:pink; display:inline-block; vertical-align:middle; margin:20px 10px; }
+        div.down_banner > ul  li img { width:100%; height:100%; }
+
+        * { padding: 0; margin: 0;}
+        a { text-decoration: none;}
+        li {list-style: none;}
+
+        .main-view { width: 665px; height: 411px; overflow: hidden;}
+        .main-view ul { width: 665px; display: flex; animation: slide 8s infinite;}
+        .main-view ul li {width: 665px; height: 411px; }
+
+
+        @keyframes slide {
+            0% { margin-left: 0;}
+            10% { margin-left: 0;}
+            25% { margin-left: -100%;} /*1st to 2and*/
+            35% { margin-left: -100%;}
+            50% { margin-left: -200%;} /*2st to 3and*/
+            60% { margin-left: -200%;}
+            75% { margin-left: -300%;} /*3st to 4and*/
+            85% { margin-left: -300%;}
+            100% { margin-left: 0;}    /*4st back to 1st*/
+        }
+
+
+    </style>
+    
+    <!--하단배너-->
+    <div class="down_banner">
+        <h2>Mojelly in Media</h2>
+        
+            <div class="movie">
+                <iframe src="https://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=1CC995F98C603701334C4AAAC45AA20D9C99&amp;outKey=V127a2c20d2ad91187878693fc12a4e395eb362d4d87dfb5b3030693fc12a4e395eb3&amp;controlBarMovable=true&amp;jsCallable=true&amp;isAutoPlay=true&amp;skinName=tvcast_white" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="570" height="400" allow="autoplay" allowfullscreen></iframe>  
+       		</div>
+            
+                <div class="main-view">
+                    <ul>
+                        <li><img src="images/01.jpg"></li>
+                        <li><img src="images/02.jpg"></li>
+                        <li><img src="images/03.jpg"></li>
+                        <li><img src="images/04.jpg"></li>
+                    </ul>
+                </div>
+    </div>
+    

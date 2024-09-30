@@ -1,0 +1,59 @@
+<!-- 메인중앙2단배너 -->
+<style>
+    * { padding: 0; margin: 0;}
+    a {text-decoration: none;}
+    li { list-style: none;}
+
+    div.middle_banner { width: 1200px; height: 400px; border: 1px solid red; margin: 0 auto; text-align: center;}
+   
+    div.middle_banner li { display: inline-block; vertical-align: middle; }
+
+    div.middle_banner li a { display: block; width: 560px; height: 360px;   
+                            margin: 20px 15px; position: relative;}
+
+    div.middle_banner li img { width: 100%;}
+
+    div.middle_banner li p.txt1 {
+        position: absolute; left:30px; bottom: 150px;
+        color:#fff; font-size: 22px; letter-spacing: -1px; 
+        z-index: 2;
+    }
+
+    div.middle_banner li p.txt2 {
+        position: absolute; left:30px; bottom: 60px;
+        color:#fff; font-size: 28px; font-weight:bold; letter-spacing: -2px; text-align: left;
+        z-index: 2;
+    }
+
+    div.middle_banner li p.box {
+        width: 100%; height: 100%; background: rgba(0,0,0,0.6);
+
+        position: absolute; left:0; top:0;
+        opacity: 0;
+    }
+    div.middle_banner li:hover p.box {
+        opacity: 1;
+        transition: 1s;
+        cursor: pointer;
+    }
+</style>
+
+<div class="middle_banner">
+    <ul>
+        <li><a href="/best_closet.html"><img src="/images/main_banner02.jpg">
+        
+            <p class="txt1">BEST OF BEST</p>
+            <p class="txt2">
+                판매 1위 옷장<br>
+                특별 할인전
+            </p>
+
+            <p class="box"></p></a>
+
+        </li>
+        <li><a href="/ds_event.html"><img src="/images/main_banner27.jpg">
+        
+            <p class="box"></p></a>
+        </li>
+    </ul>
+</div>

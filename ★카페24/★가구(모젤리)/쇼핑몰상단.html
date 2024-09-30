@@ -1,0 +1,67 @@
+<style>
+.header_sec02 {  width:100%; min-width:1260px; position:relative; text-align:center;}
+
+
+.header_sec02 .top_logo {text-align:center;}
+.header_sec02 .top_logo a {vertical-align:middle;line-height:60px; display:table-cell;}
+.header_sec02 .top_logo a img {vertical-align:middle;}
+
+
+.header_sec02 .top_cate {text-align:center; display:inline-block; position:absolute; left:0%; right:0%; margin-top:20px; height:60px; line-height:60px;}
+.header_sec02 .top_cate .cate_insta {color:#ff0042;}
+.header_sec02 .top_cate > a {display:inline-block;margin: 0 19px; color:#333; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s;  transition: all 0.3s;}
+.header_sec02 .top_cate > a:hover {box-shadow:0 2px 0 0  rgba(0,0,0,1) inset;}
+.header_sec02 .top_cate .cate_insta:hover {box-shadow:0 2px 0 0  rgba(255,0,66,1) inset;}
+
+.xans-layout-category {display:inline-block; vertical-align:middle;}
+.xans-layout-category .postion { z-index:1; }
+.xans-layout-category .postion > ul > li { position:relative;margin:0 19px;display:inline-block;}
+.xans-layout-category .postion > ul > li > a {display:inline-block; padding:0;}
+.xans-layout-category .postion > ul > li > a:hover {box-shadow:0 2px 0 0  rgba(0,0,0,1) inset;-webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s;  transition: all 0.3s;}
+.xans-layout-category li a {display:block; padding:0px; font-size:11px; color:#333;}
+.xans-layout-category li.on { position:relative; z-index:91; }
+.xans-layout-category li.on > a {box-shadow:0 2px 0 0  rgba(0,0,0,1) inset;-webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s;  transition: all 0.3s;}
+.xans-layout-category li img { display:block; margin:0px; }
+.xans-layout-category .sub-category { position:absolute; left:50%; top:60px; z-index:90; margin: 0 0 0 -74px; }
+.xans-layout-category .sub-category ul {  width: 140px; border:1px solid #dfdfdf;zoom:1; padding: 8px 8px 8px 8px; background: #fff; }
+.xans-layout-category .sub-category a {text-indent:5px; display:block; height: 34px; line-height: 34px; font-style:normal; text-align: left; border-bottom: 1px solid #dedede; font-size: 11px; }
+.xans-layout-category .sub-category a:hover {background:#f6f6f6; }
+
+
+.header_sec02 .top_search_area { display: inline-block; vertical-align: middle;}
+.header_sec02 .top_cart {position: relative; top:15px;}
+.header_sec02 .top_cart .xans-layout-orderbasketcount {background:transparent; padding:0;}
+.header_sec02 .top_cart span {position:absolute; top:0px; right:0px; color:#fff; width:17px; height:17px; line-height:17px;  text-align:center; font-size:10px;}
+#comment_top.fixed { width:100%; position:fixed; top:0px; left:0px; z-index:2222; border-bottom:1px solid #e9e9e9; height:60px;  background-color:#fff;}
+
+</style>
+
+
+
+<div class="header_sec02 cboth" id="comment_top">
+        
+	<div class="top_logo fleft"><a href="/"><img src="/images/logo.gif"></a></div>
+	
+	<div class="top_cate"><!-- 상단 메뉴 수정하는곳 -->
+		
+		<div module="Layout_category">
+			<!--@js(/js/module/layout/category.js)-->
+			<div class="postion">
+				<ul class="cboth">
+					<li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+					<li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- <a href="/shopinfo/company.html">BRAND</a>
+		<a href="/board/event/8/?board_no=8&category_no=1">EVENT</a>
+		<a href="#">GROUP BUYING</a>
+		<a href="https://www.instagram.com/?hl=ko" target="_blank" class="cate_insta">INSTAGRAM</a>
+		<a href="https://www.youtube.com/?gl=KR" target="_blank">YOUTUBE</a>-->
+	</div>
+
+	<div class="top_search_area fright">
+		<div class="fleft top_cart"><a href="/order/basket.html"><img src="/images/top_cart.png"><span module="Layout_orderBasketcount">{$basket_count}</span></a></div>
+	</div><!-- //top_search_area -->
+	
+</div><!-- //header_sec02 -->

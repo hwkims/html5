@@ -1,0 +1,97 @@
+<div id="footer" class="cboth">
+	<div class="width1200" style="position: relative; background:cyan">
+        
+        <style>
+            div.box1 { width:230px; height:230px; background:#30394a; 
+                       position:absolute; left:800px; top:15px; text-align:center;
+                       display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+
+            }
+            div.box1 a { color:#fff;}
+
+            div.box2 { width:150px; height:230px; background:yellow; position:absolute; left:1040px; top:15px; text-align:center;}
+            
+            div.box2 ul li a {
+                display: block;
+                width: 100%;
+                height: 46px;
+                line-height:46px;
+                text-align:left;
+                box-sizing:border-box;
+                
+                padding-left:10px;
+                border-bottom : 1px solid #ddd;
+            }
+            div.box2 ul li a i {
+                padding-right: 10px;
+            }
+            div.box2 ul li a:hover {
+                background: #ccc;
+                color:#555;
+            }
+
+            
+
+            ul.fright {background:red; position:absolute; left:620px; top:120px;}
+        </style>
+        
+        <!-- 오시는길 -->
+        <div class="box1">
+           <a href="/company_nowon.html">
+               <p class="icon"><img src="/images/map_icon.jpg"></p>
+               <p class="txt">오시는 길</p>
+           </a>
+        </div>
+        
+        <!-- 하단메뉴 -->
+        <div class="box2">
+            <ul>
+                <li><a href="/myshop/order/list.html"><i class="fa-solid fa-truck"></i> 주문/배송조회</a></li>
+                <li><a href="/shop1/front/php/b/board_list.php?board_no=6&is_pcver=T"><i class="fa-solid fa-circle-question"></i> 상품 Q&A</a></li>
+                <li><a href="/shop1/front/php/b/board_list.php?board_no=4&is_pcver=T"><i class="fa-solid fa-clipboard"></i> 상품 후기 보기</a></li>
+                <li><a href="/membership.html"><i class="fa-solid fa-gift"></i> 이벤트</a></li>
+                <li><a href="/company_nowon.html"><i class="fa-solid fa-location-dot"></i> 오시는 길</a></li>
+            </ul>
+        </div>
+        
+		<div class="footer_section01 cboth">
+			<div class="fleft ft_logo" module="custom_moduleedit_201"><a href="/"><img src="/images/ft_logo.gif"></a></div>
+			
+            <ul class="fright"><!-- 하단 SNS 링크수정 -->
+				<li class="title">FOLLOW US</li>
+				<li><a href="https://www.youtube.com/?gl=KR" target="_blank"><img src="/images/ft_sns01.png"></a></li>
+				<li><a href="https://ko-kr.facebook.com/" target="_blank"><img src="/images/ft_sns02.png"></a></li>
+				<li class="last"><a href="https://www.instagram.com/?hl=ko" target="_blank"><img src="/images/ft_sns03.png"></a></li>
+			</ul>
+		</div><!-- //footer_section01 -->
+
+		<div class="footer_section02 cboth">
+			<div class="cboth ft_copy" module="Layout_footer">
+				<!-- 고객센터 / 은행정보 수동입력영역 -->
+				<div class="call">T. {$phone}</div>
+				<div class="cs_center"><!-- 하단 운영시간 및 계좌정보 수정하는곳 -->
+					{$runtime}				
+				</div><!-- //cs_center -->
+
+				COMPANY : {$company_name} &nbsp;/&nbsp; OWNER : {$president_name} &nbsp;/&nbsp; ADDRESS : {$mall_zipcode} {$mall_addr1} {$mall_addr2} &nbsp;/&nbsp;   TEL : {$phone}<br>
+				사업자등록번호 : {$company_regno} {$biz_no_link} &nbsp;/&nbsp; 통신판매업 신고번호 : {$network_regno} &nbsp;/&nbsp; 개인정보책임관리자 : <a href="mailto:{$cpo_email}">{$cpo_name}({$cpo_email})</a><br>
+				고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG 사의 구매안전서비스를 이용하실 수 있습니다. LG U+ 에스크로 
+				<!-- 에스크로 가입사실확인 링크 -->
+				<a href="#">[서비스가입사실확인]</a><br>
+				Copyright by {$mall_name}. All rights reserved. Hosting by 카페24(주)
+			</div>
+			<div class="cboth ft_copy2">
+				<ul>
+					<li><a href="/shopinfo/company.html">COMPANY</a></li>
+					<li><a href="/shopinfo/guide.html">GUIDE</a></li>
+					<li><a href="/member/privacy.html" class="policy">PRIVACY POLICY</a></li>
+					<li><a href="/member/agreement.html">AGREEMENT</a></li>
+				</ul>
+				<ul module="Layout_multishopListitem">
+					<li><a href="//{$shop_domain}/"><img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a></li>
+					<li><a href="//{$shop_domain}/"><img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a></li>
+				</ul>
+			</div>
+		</div><!-- //footer_section02 -->
+	</div>
+</div><!-- //footer -->

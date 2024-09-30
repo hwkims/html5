@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * { padding: 0; margin: 0;}
+        a { text-decoration: none;}
+        li {list-style: none;}
+
+        .main-view { width: 665px; height: 411px; border: 3px solid red;}
+        .main-view ul { width: 665px; display: flex; animation: slide 8s infinite;}
+        .main-view ul li {width: 665px; height: 411px; }
+
+
+        @keyframes slide {
+            0% { margin-left: 0;}
+            10% { margin-left: 0;}
+            25% { margin-left: -100%;} /*1st to 2and*/
+            35% { margin-left: -100%;}
+            50% { margin-left: -200%;} /*2st to 3and*/
+            60% { margin-left: -200%;}
+            75% { margin-left: -300%;} /*3st to 4and*/
+            85% { margin-left: -300%;}
+            100% { margin-left: 0;}    /*4st back to 1st*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="main-view">
+        <ul>
+            <li><img src="images/01.jpg"></li>
+            <li><img src="images/02.jpg"></li>
+            <li><img src="images/03.jpg"></li>
+            <li><img src="images/04.jpg"></li>
+        </ul>
+    </div>
+
+</body>
+</html>
